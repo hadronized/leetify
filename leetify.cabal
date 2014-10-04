@@ -6,7 +6,7 @@ description:         Leetify a string from the command line interface and
 license:             BSD3
 license-file:        LICENSE
 author:              Dimitri Sabadie
-maintainer:          dimitri.sabadie@gmail.com
+maintainer:          Dimitri Sabadie <dimitri.sabadie@gmail.com>
 category:            Text
 
 build-type:          Simple
