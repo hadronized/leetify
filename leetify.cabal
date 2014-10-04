@@ -1,5 +1,5 @@
 name:                leetify
-version:             0.1.0.0
+version:             0.1.0.1
 synopsis:            Leetify text
 description:         Leetify a string from the command line interface and
                      output it on stdout
@@ -7,12 +7,18 @@ license:             BSD3
 license-file:        LICENSE
 author:              Dimitri Sabadie
 maintainer:          Dimitri Sabadie <dimitri.sabadie@gmail.com>
+homepage:            http://github.com/phaazon/leetify
+bug-reports:         http://github.com/phaazon/leetify/issues
 category:            Text
 
 build-type:          Simple
 cabal-version:       >=1.10
 
 data-files:           README.md
+
+source-repository head
+  type:     git
+  location: git://github.com/phaazon/leetify.git
 
 executable leetify
   main-is:             Main.hs
