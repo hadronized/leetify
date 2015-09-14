@@ -1,12 +1,12 @@
 import Data.Char ( toUpper )
-import Data.Map as M ( Map, fromList, lookup )
+import Data.Map as M ( Map, fromList, findWithDefault )
 import Data.Maybe ( fromMaybe )
 import System.Environment ( getArgs )
 
 main :: IO ()
 main = fmap concat getArgs >>= putStrLn . map leetify
   where
-    leetify x = fromMaybe x $ M.lookup (toUpper x) leets
+    leetify x = M.findWithDefault x (toUpper x) leets
 
 leets :: Map Char Char
 leets = fromList
